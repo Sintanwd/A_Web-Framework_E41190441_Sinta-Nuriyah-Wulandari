@@ -22,4 +22,7 @@ Route::get('/user', [ManagementUserController::class,'index']);
 //Route::get('/create', [ManagementUserController::class,'create']);
 //Route::get('/user/1/edit', [ManagementUserController::class,'edit']);
 
+//Route::get("/home", function(){
+//  return view("home");
+//})
 ?>
