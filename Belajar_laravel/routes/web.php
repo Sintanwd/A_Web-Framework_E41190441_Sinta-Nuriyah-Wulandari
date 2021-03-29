@@ -23,6 +23,10 @@ Route::get('/user', [ManagementUserController::class,'index']);
 //Route::get('/user/1/edit', [ManagementUserController::class,'edit']);
 
 //Route::get("/home", function(){
-//  return view("home");
+//return view("home");
 //})
+
+//Route::get("/user", function(){
+  //return view("user");
+  //})
 ?>
