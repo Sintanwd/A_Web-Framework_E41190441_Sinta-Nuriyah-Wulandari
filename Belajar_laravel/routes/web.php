@@ -2,7 +2,8 @@
 
 //use App\Http\Controllers\ManagementUserController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+//use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+    //return view('welcome');
+//});
 
 //Route::get('/home', function () {
   //return view('frontend.home');
@@ -39,13 +40,13 @@ Route::get('/', function () {
     //return view('backend.dashboard');
   //});
 
-  Route::group(['namespace' => 'frontend'], function()
-  {
-    Route::resource('home', 'HomeController');
-  });
-
-  //Route::group(['namespace' => 'Backend'], function()
+  //Route::group(['namespace' => 'frontend'], function()
   //{
-    //Route::resource('dashboard', 'DahsboardController');
+    //Route::resource('home', 'HomeController');
   //});
+
+  Route::group(['namespace' => 'backend'], function()
+  {
+    Route::resource('dashboard', 'DashboardController');
+  });
 ?>
