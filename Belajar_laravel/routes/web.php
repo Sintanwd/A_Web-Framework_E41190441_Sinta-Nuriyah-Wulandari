@@ -50,3 +50,6 @@ use App\Http\Controllers\DashboardController;
     Route::resource('dashboard', 'DashboardController');
   });
 ?>
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
